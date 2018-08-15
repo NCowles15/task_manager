@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1290</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="dragMode">
+         <enum>QGraphicsView::ScrollHandDrag</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Grid Layout settings</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Date Range Selection</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QDateEdit" name="dateEdit">
+                  <property name="dateTime">
+                   <datetime>
+                    <hour>0</hour>
+                    <minute>0</minute>
+                    <second>0</second>
+                    <year>2018</year>
+                    <month>1</month>
+                    <day>1</day>
+                   </datetime>
+                  </property>
+                  <property name="displayFormat">
+                   <string>M/d/yyyy</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>To</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDateEdit" name="dateEdit_2">
+                  <property name="dateTime">
+                   <datetime>
+                    <hour>0</hour>
+                    <minute>0</minute>
+                    <second>0</second>
+                    <year>2019</year>
+                    <month>1</month>
+                    <day>1</day>
+                   </datetime>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string>Title Settings</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QGroupBox" name="groupBox_5">
+                <property name="title">
+                 <string>Box Dimensions</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>Width:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_5">
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>450</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>Height:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_6">
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_6">
+                <property name="title">
+                 <string>Font</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QFontComboBox" name="fontComboBox_2">
+                   <property name="currentFont">
+                    <font>
+                     <family>Lucida Console</family>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_8">
+                   <property name="value">
+                    <number>16</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_7">
+             <property name="title">
+              <string>Date Settings</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QGroupBox" name="groupBox_8">
+                <property name="title">
+                 <string>Box Dimensions</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>Width:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_3">
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>35</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>Height</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_4">
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>35</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_9">
+                <property name="title">
+                 <string>Font</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QFontComboBox" name="fontComboBox">
+                   <property name="currentFont">
+                    <font>
+                     <family>Lucida Console</family>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_7">
+                   <property name="value">
+                    <number>10</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_10">
+             <property name="title">
+              <string>Cell Settings</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QGroupBox" name="groupBox_12">
+                <property name="title">
+                 <string>Cell Dimensions</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>Width:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox">
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>200</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>Height:</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_2">
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>170</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Icon Base Scale:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox">
+               <property name="minimum">
+                <double>0.250000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>1.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.050000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Grid Buffer Height:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_9">
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+               <property name="value">
+                <number>50</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_8">
+               <property name="text">
+                <string>Set To Fit</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Confirm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1290</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionFull_Save"/>
+    <addaction name="actionSave_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menuItems">
+    <property name="title">
+     <string>Items</string>
+    </property>
+    <addaction name="actionDuplicate_Item"/>
+    <addaction name="actionEdit_Item"/>
+    <addaction name="actionClear_Selected"/>
+    <addaction name="actionDelete_Selected"/>
+    <addaction name="actionSnap_Date"/>
+   </widget>
+   <widget class="QMenu" name="menuDisplay">
+    <property name="title">
+     <string>Display</string>
+    </property>
+    <addaction name="actionFilter_Settings"/>
+    <addaction name="actionToggle_Arrows"/>
+    <addaction name="actionClear_Links"/>
+    <addaction name="actionLink_Selected"/>
+    <addaction name="actionDelink_Selected"/>
+   </widget>
+   <widget class="QMenu" name="menuPaths">
+    <property name="title">
+     <string>Paths</string>
+    </property>
+    <addaction name="actionNew_Path"/>
+    <addaction name="actionPath_Settings"/>
+    <addaction name="actionEdit_Current_Path"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuItems"/>
+   <addaction name="menuDisplay"/>
+   <addaction name="menuPaths"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_Canvas">
+   <property name="text">
+    <string>Load Map</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionNew_Canvas">
+   <property name="text">
+    <string>New Canvas</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionDuplicate_Item">
+   <property name="text">
+    <string>Duplicate Item</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionEdit_Item">
+   <property name="text">
+    <string>Edit Item</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="actionAdd_Item">
+   <property name="text">
+    <string>Add Item</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionFilter_Settings">
+   <property name="text">
+    <string>Filter Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionSave_Data">
+   <property name="text">
+    <string>Save Data</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExport_Screenshot">
+   <property name="text">
+    <string>Export Screenshot</string>
+   </property>
+  </action>
+  <action name="actionExport_Selection">
+   <property name="text">
+    <string>Export Selection</string>
+   </property>
+  </action>
+  <action name="actionLock_Current_Coords">
+   <property name="text">
+    <string>Lock Coordinates</string>
+   </property>
+   <property name="shortcut">
+    <string>U</string>
+   </property>
+  </action>
+  <action name="actionSwap_Canvas">
+   <property name="text">
+    <string>Swap Canvas</string>
+   </property>
+  </action>
+  <action name="actionClear_Selected">
+   <property name="text">
+    <string>Clear Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionDelete_Selected">
+   <property name="text">
+    <string>Delete Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionLink_Selected">
+   <property name="text">
+    <string>Link Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>L</string>
+   </property>
+  </action>
+  <action name="actionToggle_Arrows">
+   <property name="text">
+    <string>Toggle Arrows</string>
+   </property>
+   <property name="shortcut">
+    <string>T</string>
+   </property>
+  </action>
+  <action name="actionDelink_Selected">
+   <property name="text">
+    <string>Delink Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionSave_Exit">
+   <property name="text">
+    <string>Save Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionFull_Save">
+   <property name="text">
+    <string>Full Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionClear_Links">
+   <property name="text">
+    <string>Clear Links</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="actionImport_Path">
+   <property name="text">
+    <string>Import Paths</string>
+   </property>
+  </action>
+  <action name="actionSave_Paths">
+   <property name="text">
+    <string>Save Paths</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionPath_Settings">
+   <property name="text">
+    <string>Path Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionEdit_Current_Path">
+   <property name="text">
+    <string>Edit Current Path</string>
+   </property>
+   <property name="shortcut">
+    <string>P</string>
+   </property>
+  </action>
+  <action name="actionNew_Path">
+   <property name="text">
+    <string>New Path</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionExport_Paths">
+   <property name="text">
+    <string>Export Paths</string>
+   </property>
+  </action>
+  <action name="actionSnap_Date">
+   <property name="text">
+    <string>Snap Date</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

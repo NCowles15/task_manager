@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="dragMode">
+       <enum>QGraphicsView::ScrollHandDrag</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="minimum">
+         <number>30</number>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="singleStep">
+         <number>1</number>
+        </property>
+        <property name="sliderPosition">
+         <number>100</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Confirm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1073</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_Canvas"/>
+    <addaction name="actionNew_Canvas"/>
+    <addaction name="actionSave_Map_Data"/>
+    <addaction name="actionExport_Screenshot"/>
+    <addaction name="actionExport_Selection"/>
+    <addaction name="actionSave_Exit"/>
+    <addaction name="actionFull_Save"/>
+   </widget>
+   <widget class="QMenu" name="menuItems">
+    <property name="title">
+     <string>Items</string>
+    </property>
+    <addaction name="actionDuplicate_Item"/>
+    <addaction name="actionEdit_Item"/>
+    <addaction name="actionAdd_Item"/>
+    <addaction name="actionClear_Selected"/>
+    <addaction name="actionDelete_Selected"/>
+    <addaction name="actionLink_Selected"/>
+    <addaction name="actionDelink_Selected"/>
+    <addaction name="actionClear_Links"/>
+   </widget>
+   <widget class="QMenu" name="menuDisplay">
+    <property name="title">
+     <string>Display</string>
+    </property>
+    <addaction name="actionFilter_Settings"/>
+    <addaction name="actionLock_Current_Coords"/>
+    <addaction name="actionSwap_Canvas"/>
+    <addaction name="actionToggle_Arrows"/>
+    <addaction name="actionCalendar_View"/>
+    <addaction name="actionToggle_Priority_Scales"/>
+   </widget>
+   <widget class="QMenu" name="menuPaths">
+    <property name="title">
+     <string>Paths</string>
+    </property>
+    <addaction name="actionImport_Path"/>
+    <addaction name="actionExport_Paths"/>
+    <addaction name="actionSave_Paths"/>
+    <addaction name="actionNew_Path"/>
+    <addaction name="actionPath_Settings"/>
+    <addaction name="actionEdit_Current_Path"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuItems"/>
+   <addaction name="menuDisplay"/>
+   <addaction name="menuPaths"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_Canvas">
+   <property name="text">
+    <string>Load Map</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionNew_Canvas">
+   <property name="text">
+    <string>New Canvas</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionDuplicate_Item">
+   <property name="text">
+    <string>Duplicate Item</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionEdit_Item">
+   <property name="text">
+    <string>Edit Item</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="actionAdd_Item">
+   <property name="text">
+    <string>Add Item</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionFilter_Settings">
+   <property name="text">
+    <string>Filter Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionSave_Map_Data">
+   <property name="text">
+    <string>Save Map Data</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExport_Screenshot">
+   <property name="text">
+    <string>Export Screenshot</string>
+   </property>
+  </action>
+  <action name="actionExport_Selection">
+   <property name="text">
+    <string>Export Selection</string>
+   </property>
+  </action>
+  <action name="actionLock_Current_Coords">
+   <property name="text">
+    <string>Lock Coordinates</string>
+   </property>
+   <property name="shortcut">
+    <string>U</string>
+   </property>
+  </action>
+  <action name="actionSwap_Canvas">
+   <property name="text">
+    <string>Swap Canvas</string>
+   </property>
+  </action>
+  <action name="actionClear_Selected">
+   <property name="text">
+    <string>Clear Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionDelete_Selected">
+   <property name="text">
+    <string>Delete Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionLink_Selected">
+   <property name="text">
+    <string>Link Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>L</string>
+   </property>
+  </action>
+  <action name="actionToggle_Arrows">
+   <property name="text">
+    <string>Toggle Arrows</string>
+   </property>
+   <property name="shortcut">
+    <string>T</string>
+   </property>
+  </action>
+  <action name="actionDelink_Selected">
+   <property name="text">
+    <string>Delink Selected</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionSave_Exit">
+   <property name="text">
+    <string>Save Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionFull_Save">
+   <property name="text">
+    <string>Full Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionClear_Links">
+   <property name="text">
+    <string>Clear Links</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="actionImport_Path">
+   <property name="text">
+    <string>Import Paths</string>
+   </property>
+  </action>
+  <action name="actionSave_Paths">
+   <property name="text">
+    <string>Save Paths</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionPath_Settings">
+   <property name="text">
+    <string>Path Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionEdit_Current_Path">
+   <property name="text">
+    <string>Edit Current Path</string>
+   </property>
+   <property name="shortcut">
+    <string>P</string>
+   </property>
+  </action>
+  <action name="actionNew_Path">
+   <property name="text">
+    <string>New Path</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionExport_Paths">
+   <property name="text">
+    <string>Export Paths</string>
+   </property>
+  </action>
+  <action name="actionCalendar_View">
+   <property name="text">
+    <string>Calendar View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionToggle_Priority_Scales">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Toggle Priority Scales</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
