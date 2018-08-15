@@ -14,25 +14,17 @@ from PyQt5 import QtGui, QtWidgets
 
 
 def main():
-    """Takes a file, reads it, organizes the contents into a list of tuples of
-    tags and strings. Tags are read to determine what operations will be done
-    and how the associated strings will be used"""
+    """
+    Main executable for task manager application.
+    Begins running Gui
+    """
 
-    # simple ui running test
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
     window.setWindowTitle("Main Database")
     window.show()
     window.Open_User_Triggered()
     sys.exit(app.exec_())
-    # app = QtWidgets.QApplication(sys.argv)  # ignore()
-    #
-    # window = QtWidgets.QWidget()
-    # window.setWindowTitle("Hello World")
-    # window.show()
-
-
-
 
 if __name__ == "__main__":
     main()
