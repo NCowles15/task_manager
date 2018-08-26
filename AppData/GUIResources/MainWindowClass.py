@@ -1,5 +1,5 @@
-from ClassResources.Edit_Data import Edit_Data
-# from ClassResources.Task_Data import Task_Data
+# from ClassResources.Edit_Data import Edit_Data
+from ClassResources.Task_Data import Task_Data
 # from ClassResources.Send_Calendar import Send_Calendar
 
 from GUIResources.CheckableListClass import CheckableList
