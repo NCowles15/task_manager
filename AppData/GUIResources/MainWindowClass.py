@@ -15,7 +15,7 @@ from GUIResources.OpenTextDialogClass import OpenTextDialog
 from GUIResources.MapMainWindowClass import MapMainWindow
 
 
-from ClassResources.Send_Wunderlist import Send_Wunderlist
+# from ClassResources.Send_Wunderlist import Send_Wunderlist
 from ClassResources.Task_Data import Task_Data
 from ClassResources.File_Handler import File_Handler
 from ClassResources.Send_Printer import Send_Printer
