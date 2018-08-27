@@ -1,5 +1,5 @@
 # from ClassResources.Edit_Data import Edit_Data
-from ClassResources.Task_Data import Task_Data
+# from ClassResources.Task_Data import Task_Data
 # from ClassResources.Send_Calendar import Send_Calendar
 
 from GUIResources.CheckableListClass import CheckableList
@@ -51,7 +51,7 @@ class MainWindow(MainWindowBase, MainWindowUI):
 
         # temp = {"sort": "none", "fields": [], "filters": {"mode": "manual", "manual": [], "exclusive": {"classifications": [], "calendars": [], "numbers": [], "completed": False}, "inclusive": {"classifications": [], "calendars": [], "numbers": [], "completed": False}}}
 
-        self._wund_send = Send_Wunderlist()
+        # self._wund_send = Send_Wunderlist()
         self._validater = validate()
         self._recycler = File_Handler()
         calendars_file = File_Handler("CalendarIDs")
